@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <script src="https://kit.fontawesome.com/202b7d2b3d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/tailwind.config"></script>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="global.css">
+    <script defer src="./js/app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        class="bill__splitter__body container-lg bg-orange-700 text-white text-center uppercase rounded-lg overflow-hidden">
+        <header class="grid grid-cols-2 grid-rows-3 max-h-2xl p-6">
+            <h2 class="hero col-span-3 text-4xl">tip calculator</h2>
+            <div class="input col-span-3 mx-3 w-60">
+                <p class="text-xl">total</p>
+                <i></i>
+                <input type="number" name="" id=""
+                    class="bg-orange-700 appearance-none h-14 w-full my-5 text-center text-5xl">
+                <div class="h-px bg-white"></div>
+            </div>
+            <div class="bill-total col-start-1 col-end-2 row-start-3 row-end-4 m-2 flex justify-end flex-col">
+                <h3 class="heading">bill total</h3>
+                <p class="total-bill-output text-2xl">100.00</p>
+            </div>
+            <div class="split-total col-start-2 col-end-3 m-2 flex flex-col justify-end">
+                <h3 class="heading">split total</h3>
+                <p class="total-split-output text-2xl">28.75</p>
+            </div>
+
+        </header>
+        <section class="grid grid-cols-2 h-40">
+            <div class="total-bill bg-slate-700 p-5">
+                <h3 class="heading font-thin text-xl">split</h3>
+                <input type="number" name="" id="" class="bg-slate-700 h-14 w-10 my-5 text-center text-5xl">
+                <div class="h-px bg-white"></div>
+
+            </div>
+            <div class="tip bg-orange-300 p-5">
+                <h3 class="heading font-thin text-xl">tip</h3>
+                <div class="input flex justify-center my-5"><input type="number" name="" id=""
+                        class="appearance-none bg-orange-300 h-14 w-10  text-center text-5xl">
+                    <p class="text-5xl"> %</p>
+                </div>
+                <div class="h-px bg-white"></div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
