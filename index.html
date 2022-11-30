@@ -18,15 +18,14 @@
 
 <body>
     <div
-        class="bill__splitter__body container-lg bg-orange-700 text-white text-center uppercase rounded-lg overflow-hidden">
+        class="bill__splitter__body container-lg bg-orange-700 text-white text-center uppercase rounded-lg overflow-hidden shadow-xl">
         <header class="grid grid-cols-2 grid-rows-3 max-h-2xl p-6">
-            <h2 class="hero col-span-3 text-4xl">tip calculator</h2>
+            <h2 class="hero col-span-3 text-4xl font-thin">tip calculator</h2>
             <div class="input col-span-3 mx-3 w-60">
                 <p class="text-xl">total</p>
-                <i></i>
                 <input type="number" name="" id=""
-                    class="cash-input bg-orange-700 appearance-none h-14 w-full my-5 text-center text-5xl">
-                <div class="h-px bg-white"></div>
+                    class="cash-input bg-orange-700 appearance-none h-14 w-32 mx-12 my-5 text-center text-5xl shadow-inner rounded-md">
+                <div class="h-px w-32 mx-14 bg-white"></div>
             </div>
             <div class="bill-total col-start-1 col-end-2 row-start-3 row-end-4 m-2 flex justify-end flex-col">
                 <h3 class="heading">bill total</h3>
@@ -34,24 +33,24 @@
             </div>
             <div class="split-total col-start-2 col-end-3 m-2 flex flex-col justify-end">
                 <h3 class="heading">split total</h3>
-                <p class="total-split-output  text-2xl"></p>
+                <p class="total-split-output  text-2xl">none</p>
             </div>
 
         </header>
         <section class="grid grid-cols-2 h-40">
             <div class="total-bill bg-slate-700 p-5">
                 <h3 class="heading font-thin text-xl">split</h3>
-                <input type="number" name="" id="" class="split-input bg-slate-700 h-14 w-10 my-5 text-center text-5xl">
-                <div class="h-px bg-white"></div>
+                <input type="number" name="" id="" class="split-input bg-slate-700 h-14 w-16 my-4 text-center text-5xl shadow-inner rounded-md">
+                <div class="h-px w-16 mx-6 bg-white"></div>
 
             </div>
-            <div class="tip bg-orange-300 p-5">
+            <div class="tip bg-orange-300 p-5 shadow-inner">
                 <h3 class="heading font-thin text-xl">tip</h3>
-                <div class="flex justify-center my-5"><input type="number" name="" id=""
-                        class="tip-input appearance-none bg-orange-300 h-14 w-10  text-center text-5xl">
-                    <p class="text-5xl"> %</p>
+                <div class="flex justify-center align-bottom my-3"><input type="number" name="" id=""
+                        class="tip-input appearance-none bg-orange-300 h-14 w-16  text-center text-5xl shadow-inner rounded-md caret-white">
+                    <p class="text-2xl font-thin py-4"> %</p>
                 </div>
-                <div class="h-px bg-white"></div>
+                <div class="h-px w-24 mx-3 bg-white"></div>
             </div>
         </section>
     </div>
